@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oluwagbemiga — Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="site-nav" id="site-nav">
+  <span class="nav-brand">OA</span>
+  <div class="nav-links" id="nav-links">
+    <a href="index.html"  class="nav-link active">Home</a>
+    <a href="about.html"  class="nav-link">About</a>
+    <a href="work.html"   class="nav-link">Work</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+  <a href="index.html"  class="nav-link active">Home</a>
+  <a href="about.html"  class="nav-link">About</a>
+  <a href="work.html"   class="nav-link">Work</a>
+  <a href="resume.html" class="nav-link">Resume</a>
+</div>
+
+<!-- ── Hero ── -->
+<section id="home">
+  <div class="page-wrap">
+    <p class="hero-name">Hi, I'm Oluwagbemiga.</p>
+    <p class="hero-desc">I'm a <em>designer</em> working across brand, web &amp; motion.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Stats ── -->
+<section id="about-strip">
+  <div class="page-wrap">
+    <div class="stats">
+      <div class="stat-block">
+        <span class="stat-label">At a glance</span>
+        <span class="stat-number">5+</span>
+        <span class="stat-sub">Years of experience</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-proficient-title">Proficient in</span>
+        <span class="stat-proficient-tools">The Adobe Creative Suite, Figma and Jitter</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Work ── -->
+<section id="work">
+  <div class="page-wrap">
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-tab active" data-filter="all"    role="tab" aria-selected="true">
+        <span class="filter-tab-label">All<sup>9</sup></span>
+      </button>
+      <button class="filter-tab" data-filter="brand"  role="tab" aria-selected="false">
+        <span class="filter-tab-label">Brand<sup>3</sup></span>
+      </button>
+      <button class="filter-tab" data-filter="web"    role="tab" aria-selected="false">
+        <span class="filter-tab-label">Web<sup>3</sup></span>
+      </button>
+      <button class="filter-tab" data-filter="motion" role="tab" aria-selected="false">
+        <span class="filter-tab-label">Motion<sup>3</sup></span>
+      </button>
+    </div>
+
+    <!-- Project grid -->
+    <div class="project-grid" id="project-grid">
+
+      <!-- Sorce -->
+      <article class="project-card" data-category="brand">
+        <div class="project-thumb">
+          <img src="https://www.figma.com/api/mcp/asset/8dca34b6-e091-4582-b3ea-cbf930200daf.png" alt="Sorce brand project" loading="lazy">
+        </div>
+        <div class="project-info">
+          <span class="project-name">Sorce</span>
+          <span class="project-type">Brand</span>
+        </div>
+      </article>
+
+      <!-- Credensure -->
+      <article class="project-card" data-category="motion">
+        <div class="project-thumb"></div>
+        <div class="project-info">
+          <span class="project-name">Credensure</span>
+          <span class="project-type">Motion</span>
+        </div>
+      </article>
+
+      <!-- Ladder Website -->
+      <article class="project-card" data-category="web">
+        <a href="https://useladder.io" target="_blank" rel="noopener" aria-label="Ladder Website — View Live Site">
+          <div class="project-thumb">
+            <img src="https://www.figma.com/api/mcp/asset/567ff535-5a57-4443-a939-bc6cc427f78c.png" alt="Ladder Website" loading="lazy">
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-name">Ladder Website</span>
+          <a href="https://useladder.io" target="_blank" rel="noopener" class="project-link-cta">
+            View Live Site
+            <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8L8 2M8 2H3.5M8 2V6.5"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Sweet tooth -->
+      <article class="project-card" data-category="brand">
+        <div class="project-thumb">
+          <img src="https://www.figma.com/api/mcp/asset/5fe217a8-ce0f-4eef-b8ff-5cc8e7dec33c.png" alt="Sweet tooth brand project" loading="lazy">
+        </div>
+        <div class="project-info">
+          <span class="project-name">Sweet tooth</span>
+          <span class="project-type">Brand</span>
+        </div>
+      </article>
+
+      <!-- Hurupay -->
+      <article class="project-card" data-category="motion">
+        <div class="project-thumb"></div>
+        <div class="project-info">
+          <span class="project-name">Hurupay</span>
+          <span class="project-type">Motion</span>
+        </div>
+      </article>
+
+      <!-- Ladder NG Waitlist -->
+      <article class="project-card" data-category="web">
+        <a href="#" target="_blank" rel="noopener" aria-label="Ladder NG Waitlist — View Live Site">
+          <div class="project-thumb thumb-ladder-ng">
+            <img src="https://www.figma.com/api/mcp/asset/5f666268-46f0-430b-9d79-95d12d4c738d.png" alt="Ladder NG Waitlist" loading="lazy" style="object-position:20% center">
+          </div>
+        </a>
+        <div class="project-info">
+          <span class="project-name">Ladder NG Waitlist</span>
+          <a href="#" target="_blank" rel="noopener" class="project-link-cta">
+            View Live Site
+            <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8L8 2M8 2H3.5M8 2V6.5"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Ladder Brand -->
+      <article class="project-card" data-category="brand">
+        <div class="project-thumb thumb-ladder-brand">
+          <img src="https://www.figma.com/api/mcp/asset/9d1ca056-ec89-4585-87b3-9180400eb2ae.svg" alt="Ladder brand identity" loading="lazy" style="object-fit:contain;padding:24px">
+        </div>
+        <div class="project-info">
+          <span class="project-name">Ladder</span>
+          <span class="project-type">Brand</span>
+        </div>
+      </article>
+
+      <!-- Daya -->
+      <article class="project-card" data-category="motion">
+        <div class="project-thumb"></div>
+        <div class="project-info">
+          <span class="project-name">Daya</span>
+          <span class="project-type">Motion</span>
+        </div>
+      </article>
+
+      <!-- Apollos -->
+      <article class="project-card" data-category="web">
+        <div class="project-thumb" style="position:relative;">
+          <img src="https://www.figma.com/api/mcp/asset/9d3528f8-d717-48d7-b92b-20d5f1cd0b17.png" alt="Apollos website" loading="lazy">
+          <span class="coming-soon-badge">Coming soon</span>
+        </div>
+        <div class="project-info">
+          <span class="project-name">Apollos</span>
+          <span class="project-type">Web</span>
+        </div>
+      </article>
+
+    </div><!-- /project-grid -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Explorations ── -->
+<section id="explorations">
+  <div class="page-wrap">
+    <h2 class="section-heading">Explorations &amp; side projects</h2>
+    <div class="exploration-grid">
+      <article class="exploration-card">
+        <div class="exploration-thumb">
+          <img src="https://www.figma.com/api/mcp/asset/2972eef9-9c18-41b9-84f0-3c5a5f90eb42.png" alt="Art Direction exploration" loading="lazy">
+        </div>
+        <span class="exploration-name">Art Direction</span>
+      </article>
+      <article class="exploration-card">
+        <div class="exploration-thumb">
+          <img src="https://www.figma.com/api/mcp/asset/062663f7-6fa5-4f55-a233-f479cdfb1135.png" alt="Mythos concept" loading="lazy">
+        </div>
+        <span class="exploration-name">Mythos concept</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Contact ── -->
+<section id="contact">
+  <div class="page-wrap">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <h2 class="contact-title">Get in touch</h2>
+        <p class="contact-sub">
+          Want to work on something together?<br>
+          Just want to chat? Feel free to reach out.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:hello@gbemiga.com" class="contact-btn">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1" y="3" width="12" height="9" rx="1"/><path d="M1 3.5l6 4.5 6-4.5"/></svg>
+            Email me
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="contact-btn outline">Twitter / X</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-btn outline">LinkedIn</a>
+        </div>
+      </div>
+      <div class="contact-avatars">
+        <div class="contact-avatar">
+          <img src="https://www.figma.com/api/mcp/asset/2e35de04-e51f-4b09-ad46-7bd2936ab150.png" alt="">
+        </div>
+        <div class="contact-avatar rounded">
+          <img src="https://www.figma.com/api/mcp/asset/2a43129b-2ddc-463d-95ac-5caa63609c9f.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="site-footer">
+  <div class="footer-heading">
+    <span class="line1">Thanks for stopping by.</span>
+    <span class="line2">See you around.</span>
+  </div>
+  <p class="footer-copy">
+    Oluwagbemiga Akinsanya<br>
+    Selected works/2020-2026 ©
+  </p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
