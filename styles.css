@@ -657,7 +657,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .project-showcase-inner {
   max-width: 896px;
   margin: 0 auto;
-  padding: 0 var(--col-pad);
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 0;
