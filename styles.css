@@ -472,6 +472,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .about-section-1, .about-section-2, .about-section-3, .about-section-4, .about-section-5 {
   padding: 64px 0;
 }
+.about-section-1 .page-wrap,
+.about-section-2 .page-wrap,
+.about-section-3 .page-wrap,
+.about-section-4 .page-wrap,
+.about-section-5 .page-wrap {
+  padding: 0 calc(var(--col-pad) + 20px);
+}
 
 .about-emoji-heading {
   font-weight: 500;
