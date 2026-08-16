@@ -652,6 +652,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-size: 20px;
   color: var(--black);
   letter-spacing: -.4px;
+  padding: 0 20px;
 }
 .breadcrumb-gray {
   color: var(--gray);
@@ -681,6 +682,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0 calc(var(--col-pad) + 20px);
 }
 .overview-title {
   font-weight: 700;
