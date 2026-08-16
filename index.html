@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="grid-line-v" aria-hidden="true"></div>
 
 <!-- ── Navigation ── -->
 <nav class="site-nav" id="site-nav">
@@ -18,7 +19,6 @@
     <a href="index.html"  class="nav-link active">Home</a>
     <a href="about.html"  class="nav-link">About</a>
     <a href="work.html"   class="nav-link">Work</a>
-    <a href="resume.html" class="nav-link">Resume</a>
   </div>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -30,7 +30,6 @@
   <a href="index.html"  class="nav-link active">Home</a>
   <a href="about.html"  class="nav-link">About</a>
   <a href="work.html"   class="nav-link">Work</a>
-  <a href="resume.html" class="nav-link">Resume</a>
 </div>
 
 <!-- ── Hero ── -->
@@ -88,7 +87,7 @@
       <!-- Sorce -->
       <article class="project-card" data-category="brand">
         <div class="project-thumb">
-          <img src="https://www.figma.com/api/mcp/asset/8dca34b6-e091-4582-b3ea-cbf930200daf.png" alt="Sorce brand project" loading="lazy">
+          <img src="images/site/sorce-thumb.png" alt="Sorce brand project" loading="lazy">
         </div>
         <div class="project-info">
           <span class="project-name">Sorce</span>
@@ -109,7 +108,7 @@
       <article class="project-card" data-category="web">
         <a href="https://useladder.io" target="_blank" rel="noopener" aria-label="Ladder Website — View Live Site">
           <div class="project-thumb">
-            <img src="https://www.figma.com/api/mcp/asset/567ff535-5a57-4443-a939-bc6cc427f78c.png" alt="Ladder Website" loading="lazy">
+            <img src="images/site/ladder-website-thumb.png" alt="Ladder Website" loading="lazy">
           </div>
         </a>
         <div class="project-info">
@@ -123,11 +122,13 @@
 
       <!-- Sweet tooth -->
       <article class="project-card" data-category="brand">
-        <div class="project-thumb">
-          <img src="https://www.figma.com/api/mcp/asset/5fe217a8-ce0f-4eef-b8ff-5cc8e7dec33c.png" alt="Sweet tooth brand project" loading="lazy">
-        </div>
+        <a href="sweet-tooth.html" aria-label="Sweet tooth — View project">
+          <div class="project-thumb">
+            <img src="images/site/sweet-tooth-thumb.png" alt="Sweet tooth brand project" loading="lazy">
+          </div>
+        </a>
         <div class="project-info">
-          <span class="project-name">Sweet tooth</span>
+          <a href="sweet-tooth.html" class="project-name">Sweet tooth</a>
           <span class="project-type">Brand</span>
         </div>
       </article>
@@ -145,7 +146,7 @@
       <article class="project-card" data-category="web">
         <a href="#" target="_blank" rel="noopener" aria-label="Ladder NG Waitlist — View Live Site">
           <div class="project-thumb thumb-ladder-ng">
-            <img src="https://www.figma.com/api/mcp/asset/5f666268-46f0-430b-9d79-95d12d4c738d.png" alt="Ladder NG Waitlist" loading="lazy" style="object-position:20% center">
+            <img src="images/site/ladder-ng-thumb.png" alt="Ladder NG Waitlist" loading="lazy" style="object-position:20% center">
           </div>
         </a>
         <div class="project-info">
@@ -180,7 +181,7 @@
       <!-- Apollos -->
       <article class="project-card" data-category="web">
         <div class="project-thumb" style="position:relative;">
-          <img src="https://www.figma.com/api/mcp/asset/9d3528f8-d717-48d7-b92b-20d5f1cd0b17.png" alt="Apollos website" loading="lazy">
+          <img src="images/site/apollos-thumb.png" alt="Apollos website" loading="lazy">
           <span class="coming-soon-badge">Coming soon</span>
         </div>
         <div class="project-info">
@@ -202,13 +203,13 @@
     <div class="exploration-grid">
       <article class="exploration-card">
         <div class="exploration-thumb">
-          <img src="https://www.figma.com/api/mcp/asset/2972eef9-9c18-41b9-84f0-3c5a5f90eb42.png" alt="Art Direction exploration" loading="lazy">
+          <img src="images/site/art-direction-thumb.png" alt="Art Direction exploration" loading="lazy">
         </div>
         <span class="exploration-name">Art Direction</span>
       </article>
       <article class="exploration-card">
         <div class="exploration-thumb">
-          <img src="https://www.figma.com/api/mcp/asset/062663f7-6fa5-4f55-a233-f479cdfb1135.png" alt="Mythos concept" loading="lazy">
+          <img src="images/site/mythos-thumb.png" alt="Mythos concept" loading="lazy">
         </div>
         <span class="exploration-name">Mythos concept</span>
       </article>
@@ -239,10 +240,10 @@
       </div>
       <div class="contact-avatars">
         <div class="contact-avatar">
-          <img src="https://www.figma.com/api/mcp/asset/2e35de04-e51f-4b09-ad46-7bd2936ab150.png" alt="">
+          <img src="images/site/contact-avatar-1.png" alt="">
         </div>
         <div class="contact-avatar rounded">
-          <img src="https://www.figma.com/api/mcp/asset/2a43129b-2ddc-463d-95ac-5caa63609c9f.png" alt="">
+          <img src="images/site/contact-avatar-2.png" alt="">
         </div>
       </div>
     </div>

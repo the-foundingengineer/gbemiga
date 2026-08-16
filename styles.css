@@ -37,6 +37,18 @@ a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 button { cursor: pointer; border: none; background: none; font: inherit; }
 
+/* ── Grid line ── */
+.grid-line-v {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  background: var(--divider);
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* ═══════════════════════════════════════════════
    NAVIGATION
    ═══════════════════════════════════════════════ */
