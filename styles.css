@@ -125,7 +125,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
    PAGE LAYOUT HELPERS
    ═══════════════════════════════════════════════ */
 .page-wrap {
-  padding: 0 var(--col-pad);
+  padding: 0 calc(var(--col-pad) + 20px);
   max-width: calc(var(--max-content) + 2 * var(--col-pad));
   margin: 0 auto;
 }
@@ -380,7 +380,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
-  padding: 0 20px;
 }
 .contact-text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px; }
 .contact-title {
@@ -435,7 +434,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
    ═══════════════════════════════════════════════ */
 .site-footer {
   background: var(--dark);
-  padding: 100px var(--col-pad) 60px;
+  padding: 100px calc(var(--col-pad) + 20px) 60px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -464,13 +463,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
    ═══════════════════════════════════════════════ */
 .about-section-1, .about-section-2, .about-section-3, .about-section-4, .about-section-5 {
   padding: 64px 0;
-}
-.about-section-1 .page-wrap,
-.about-section-2 .page-wrap,
-.about-section-3 .page-wrap,
-.about-section-4 .page-wrap,
-.about-section-5 .page-wrap {
-  padding: 0 calc(var(--col-pad) + 20px);
 }
 
 .about-emoji-heading {
@@ -651,7 +643,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-size: 20px;
   color: var(--black);
   letter-spacing: -.4px;
-  padding: 0 20px;
 }
 .breadcrumb-gray {
   color: var(--gray);
@@ -681,7 +672,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 calc(var(--col-pad) + 20px);
 }
 .overview-title {
   font-weight: 700;
@@ -702,9 +692,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 896px;
+  max-width: calc(896px + 2 * var(--col-pad));
   margin: 0 auto;
-  padding: 0;
+  padding: 0 calc(var(--col-pad) + 20px);
 }
 .motion-grid img {
   width: 100%;
