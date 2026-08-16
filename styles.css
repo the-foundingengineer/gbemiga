@@ -444,6 +444,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   background: var(--dark);
   padding: 100px var(--col-pad) 60px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 .footer-heading {
   font-weight: 500;
