@@ -668,6 +668,43 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: block;
 }
 
+.project-overview {
+  padding: 48px 0 0;
+}
+.project-overview .page-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.overview-title {
+  font-weight: 700;
+  font-size: clamp(20px, 2vw, 24px);
+  color: var(--gray);
+  letter-spacing: -.4px;
+}
+.overview-text {
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--black);
+  letter-spacing: -.32px;
+  line-height: 1.5;
+  max-width: 896px;
+}
+
+.motion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 896px;
+  margin: 0 auto;
+  padding: 0;
+}
+.motion-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ═══════════════════════════════════════════════
    RESPONSIVE — TABLET (≤ 1024px)
    ═══════════════════════════════════════════════ */
@@ -703,6 +740,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   /* grids: 1-col */
   .project-grid { grid-template-columns: 1fr; }
   .exploration-grid { grid-template-columns: 1fr; }
+  .motion-grid { grid-template-columns: 1fr; }
 
   /* about sections: 1-col */
   .about-intro, .about-grid-2col { grid-template-columns: 1fr; gap: 32px; }
