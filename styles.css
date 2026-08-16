@@ -42,9 +42,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   position: fixed;
   top: 0;
   left: 50%;
-  width: 1px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 896px;
   height: 100vh;
-  background: var(--divider);
+  border-left: 1px solid var(--divider);
+  border-right: 1px solid var(--divider);
+  background: transparent;
   pointer-events: none;
   z-index: 1;
 }
