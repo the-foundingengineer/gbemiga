@@ -660,7 +660,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   padding: 0 var(--col-pad);
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 0;
 }
 .project-showcase-inner img {
   width: 100%;
@@ -676,7 +676,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
   .project-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .exploration-grid { gap: 24px; }
-  .project-showcase-inner { gap: 32px; }
+  .project-showcase-inner { gap: 0; }
   .about-bio { gap: 40px; }
   .resume-layout { grid-template-columns: 1fr; gap: 48px; }
   .timeline-item { grid-template-columns: 90px 1fr; gap: 16px; }
