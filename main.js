@@ -72,6 +72,28 @@
   const projectGrid = document.getElementById('project-grid');
 
   if (filterTabs.length && projectGrid) {
+    // Check URL parameters for ?filter= category
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+
+    if (filterParam) {
+      const targetTab = Array.from(filterTabs).find(tab => tab.dataset.filter === filterParam);
+      if (targetTab) {
+        filterTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        targetTab.classList.add('active');
+        targetTab.setAttribute('aria-selected', 'true');
+
+        const cards = projectGrid.querySelectorAll('.project-card');
+        cards.forEach(card => {
+          const match = filterParam === 'all' || card.dataset.category === filterParam;
+          card.style.display = match ? '' : 'none';
+        });
+      }
+    }
+
     filterTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const filter = tab.dataset.filter;

@@ -514,9 +514,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .about-portrait {
   width: 228px;
-  height: auto;
-  transform: rotate(8.8deg);
-  box-shadow: -10px 14px 44px rgba(0,0,0,0.1);
+  height: 290px;
+  object-fit: cover;
+  object-position: top center;
+  transform: rotate(6.5deg);
+  background: #ffffff;
+  padding: 12px 12px 28px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Section 2: Scattered images */
@@ -647,13 +653,19 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .project-breadcrumb {
   font-family: var(--font-ui);
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   color: var(--black);
-  letter-spacing: -.4px;
+  margin-bottom: 24px;
 }
-.breadcrumb-gray {
-  color: var(--gray);
+.breadcrumb-gray,
+.breadcrumb-link {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a.breadcrumb-link:hover {
+  color: var(--black);
+  text-decoration: underline;
 }
 
 .project-showcase {
