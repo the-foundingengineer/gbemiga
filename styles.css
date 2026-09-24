@@ -736,9 +736,10 @@ a.breadcrumb-link:hover {
 }
 
 /* ═══════════════════════════════════════════════
-   LOTTIE PREVIEW PLAYERS
+   LOTTIE & VIDEO PREVIEW PLAYERS
    ═══════════════════════════════════════════════ */
-.lottie-preview-hero {
+.lottie-preview-hero,
+.video-preview-hero {
   max-width: calc(896px + 2 * var(--col-pad));
   margin: 0 auto 31px;
   padding: 0 calc(var(--col-pad) + 20px);
@@ -750,6 +751,17 @@ a.breadcrumb-link:hover {
   display: block;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.project-video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0d0d0d;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
 
